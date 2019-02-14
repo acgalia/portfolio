@@ -1,0 +1,176 @@
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body,
+.container {
+	position: relative;
+}
+
+.jumbotron {
+	box-shadow: 10px 10px;
+	margin-top: 5%;
+	width: 100%;
+}
+
+.name {
+	font-size: 400%;
+}
+
+#home {
+	background: url("../images/laptop.jpeg");
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+strong{
+	color: #ffbc5f;
+}
+
+#start {
+	transition: 1s;
+	color: black;
+	animation: rubberBand 2s infinite;
+	background-color: #ffbc5f;
+	box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+
+.nav-item {
+	transition: 0.8s;
+}
+
+#home,
+#about,
+#portfolio,
+#contact {
+	min-height: 100vh;
+}
+
+/*hexagon*/
+
+.hexprofile {
+	width: 500px;
+	height: 250px;
+	background: red;
+	transform: rotate(120deg);
+	-moz-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	-o-transform: rotate(120deg);
+	-webkit-transform: rotate(120deg);
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.hexagon_inside {
+	width: 100%;
+	height: 100%;
+	background: green;
+	transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+	overflow: hidden;
+}
+
+.hexagon_image {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/profile.JPG");
+	background-position: center;
+	background-size: 60% 100%;
+	transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+	visibility: visible;
+}
+
+.projects {
+	background-color:rgba(0,0,0,0.7);
+}
+
+.card-image {
+	background-position: center; 
+	background-size: 100% 100%;
+}
+
+#contact {
+	background: url("../images/blackpen.jpg");
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.arrowup {
+	color: #ABA0A1;
+	animation: slideOutUp 2s infinite;
+}
+
+footer {
+	height: 25vh;
+}
+
+/*mobile*/
+@media only screen and (max-width: 400px) {
+
+.hexprofile {
+	width: 295px;
+	height: 140px;
+	background: red;
+	transform: rotate(120deg);
+	-moz-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	-o-transform: rotate(120deg);
+	-webkit-transform: rotate(120deg);
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.hexagon_inside {
+	width: 100%;
+	height: 100%;
+	background: green;
+	transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+	overflow: hidden;
+}
+
+.hexagon_image {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/profile.JPG");
+	background-position: center;
+	background-size: 60% 100%;
+	transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+	visibility: visible;
+}
+
+}
+/*end mobile*/
+
+/*tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+
+}
+/*end tablet*/
+
+/*desktop only*/
+@media only screen and (min-width: 1024px) {
+
+}
+/*end desktop*/

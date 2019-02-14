@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head lang="en">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
@@ -36,10 +37,11 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
 
-<div id="home" class="container-fluid">
-  <div class="row">
+	
+<div class="container-fluid">
+  <div id="home" class="row">
     <div class="col-lg-3"></div>
     <div class="col-lg-6">
       <section class="mt-5 pt-5">
@@ -49,7 +51,7 @@
         </div>
         <div class="row">
           <div class="col-lg-4"></div>
-          <a id="start" class="nav-item nav-link mx-auto" href="#about"><h4>View my Work</h4><!-- <i class="fas fa-chevron-circle-down"></i> --></a>
+          <a id="start" class="nav-item nav-link mx-auto btn btn-rounded" href="#content"><h4>View my Work</h4><!-- <i class="fas fa-chevron-circle-down"></i> --></a>
           <div class="col-lg-4"></div>
         </div>
       </section>
@@ -58,117 +60,147 @@
   </div>
 </div>
 
+ 	<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark mb-5" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-offset="300">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nb_portfolio" aria-controls="nb_portfolio" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button> 
+	  <div class="collapse navbar-collapse" id="nb_portfolio">
+	    <div id="list-example" class="navbar-nav mr-auto list-group">
+	      <a class="nav-item nav-link" href="#home">Home</a>
+	      <a class="nav-item nav-link" href="#about">About</a>
+	      <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+	      <a class="nav-item nav-link" href="#contact">Contact</a>
+	    </div>
+	  </div>
+	</nav>
+	<!-- end navbar -->		
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-offset="300">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nb_portfolio" aria-controls="nb_portfolio" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button> 
-  <div class="collapse navbar-collapse" id="nb_portfolio">
-    <div id="list-example" class="navbar-nav mr-auto list-group">
-      <a class="nav-item nav-link" href="#home">Home</a>
-      <a class="nav-item nav-link" href="#about">About</a>
-      <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-      <a class="nav-item nav-link" href="#contact">Contact</a>
-    </div>
 
-   <!--  <div class="ml-auto">
-      <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>              
-      <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-    </div> -->
-  </div>
-</nav>
-<!-- end navbar -->
+<div id="content" class="container-fluid pt-5">
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+	<div class="container" id="about">
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="my-5 text-center" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-offset="300">
+	           		About
+	          	</h3>			
+			</div>
+			<div class="col-lg-6">
+				<p class="mb-5"><span data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-offset="300">Melo is a web developer based in Manila.</span> <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-offset="300">He has a passion for learning new things and solving problems.</span> <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-offset="300">A sports enthusiast and semi professional gamer,</span> <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-offset="300">He now embarks to be a successful game developer.</span></p>
 
-        <section id="about" class="mt-5 pt-5">
-          <h2 class="mt-5 text-center" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-offset="300">
-            <span class="heading px-2">About</span>
-          </h2>
-
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="row">
-                <p class="mt-5 text-center"><span data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-offset="300">Melo is a web developer based in Manila.</span> <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-offset="300">He has a passion for learning new things and solving problems.</span> <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-offset="300">A sports enthusiast and semi professional gamer,</span> <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-offset="300">He now embarks to be a successful game developer.</span></p>
-
-                <div class="hexprofile">
+				<div class="hexprofile">
                   <div class="hexagon_inside img-fluid">
                     <div class="hexagon_image"></div>
                   </div>
                 </div>
-                
-              </div>
+			</div>
 
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5 mt-5">
-              <div class="row mb-2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <i class="fas fa-lightbulb"></i>
-                <h5>Creative</h5>
+			<div class="col-lg-6">
+              <div class="mb-2" data-aos="zoom-in-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="text-center"><i class="fas fa-lightbulb fa-3x"></i></div>
+                <h5 class="text-center">Creative</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
-              <div class="row mb-2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <i class="fas fa-laptop-code"></i>
-                <h5>Responsive</h5>
+
+              <div class="mb-2" data-aos="zoom-in-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="text-center"><i class="fas fa-laptop-code fa-3x"></i></div>
+                <h5 class="text-center">Responsive</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
-              <div class="row mb-2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <i class="fas fa-cubes"></i>
-                <h5>Dynamic</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+              <div class="mb-2" data-aos="zoom-in-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="text-center"><i class="fas fa-cubes fa-3x"></i></div>
+                <h5 class="text-center">Dynamic</h5>
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. </p>
-              </div>
-              <div class="row mb-2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <i class="fas fa-handshake"></i>
-                <h5>Precedency</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. </p>
-              </div>
-                          
-            </div>
+              </div>       			
+			</div>
+		</div>
+	</div><!-- end about -->
 
-          </div>
-        </section><!-- ABOUT -->
+	<div id="portfolio">
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="my-5 text-center" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-offset="300">
+	           		Portfolio
+	          	</h3>				
+			</div>
+			<div class="col-lg-6 offset-lg-3 my-5">
+				<div class="card card-image shadow" style="background-image: url(assets/images/capstone1.png)">
+	                <div class="projects text-white text-center align-items-center py-5 px-4">
+	                    <div>
+	                        <h6></i><strong> Capstone 1</strong></h6>
+	                        <h3 class="card-title py-3 font-weight-bold"><strong>Forsaken</strong></h3>
+	                        <p class="pb-3">Melo used basic HTML and CSS to create this project.</p>
+	                        <a href="https://acgalia.github.io/forsakengame/index.html" class="btn btn-secondary btn-rounded"><i class="far fa-clone left"></i> View project</a>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
 
-        <section id="portfolio" class="mt-5 pt-5">
-          <h2 class="mt-5 text-center" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-offset="300">
-            <span class="heading px-2">Portfolio</span>
-          </h2>
-          <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section><!-- PORTFOLIO -->
+			<div class="col-lg-6 offset-lg-3 my-5">
+				<div class="card card-image shadow" style="background-image: url(assets/images/capstone2.png)">
+	                <div class="projects text-white text-center align-items-center py-5 px-4">
+	                    <div>
+	                        <h6></i><strong> Capstone 2</strong></h6>
+	                        <h3 class="card-title py-3 font-weight-bold"><strong>Coffee Project</strong></h3>
+	                        <p class="pb-3">Melo used core PHP and SQL to create this project.</p>
+	                        <a href="https://desolate-plateau-78914.herokuapp.com/" class="btn btn-secondary btn-rounded"><i class="far fa-clone left"></i> View project</a>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
 
-        <section id="contact" class="mt-5 pt-5">
-          <h2 class="mt-5 text-center" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-offset="300">
-            <span class="heading px-2">Contact</span>
-          </h2>
-          <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section><!-- CONTACT -->
-      </div>
+			<div class="col-lg-6 offset-lg-3 my-5">
+				<div class="card card-image shadow" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg)">
+	                <div class="projects text-white text-center align-items-center py-5 px-4">
+	                    <div>
+	                        <h6></i><strong> Capstone 3</strong></h6>
+	                        <h3 class="card-title py-3 font-weight-bold"><strong>In progress</strong></h3>
+	                        <p class="pb-3">Melo used laravel to create this project.</p>
+	                        <a href="https://pure-citadel-94871.herokuapp.com/" class="btn btn-secondary btn-rounded"><i class="far fa-clone left"></i> View project</a>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+		</div>
+	</div><!-- end portfolio -->
 
-    </div>
-  </div>
+
+		<div id="contact" class="row">
+			<div class="col-lg-12">
+				<h3 class="mt-5 text-center" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-offset="300">
+	           		Contact
+	          	</h3>				
+			</div>
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4 text-center">
+				<p class="">Let us work together.</p>
+				<a class="btn btn-dark btn-rounded" href="mailto:a.carmelo.galia@gmail.com?Subject=Let%20us%20work%20together" target="_top">Send Email</a>
+			</div>
+		</div>	
+	</div><!-- end contact -->
 </div>
 
+
+<footer class="bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-4 mx-auto">
+				<a href="#home"><i class="arrowup fas fa-angle-double-up fa-3x pt-3 mx-auto"></i></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col"></div>
+		</div>
+	</div>
+</footer>
 </body>
 
-<footer>
-  
-</footer>
 
 <script type="text/javascript">
   
@@ -177,4 +209,6 @@ $('body').scrollspy({ target: '#list-example'});
 AOS.init();
 
 </script>
+
+
 </html>

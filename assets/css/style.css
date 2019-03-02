@@ -74,6 +74,10 @@ strong{
 	color: #ffbc5f;
 }
 
+.photoimage {
+	border-radius: 50%;
+}
+
 /*hexagon*/
 
 .hexprofile {
